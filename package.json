@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "CI=false gatsby build",
+    "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
