@@ -1,9 +1,8 @@
-
 <Section py="8|12|16|24">
   <Container>
     <Grid col="1|2" gap="8|12|16" alignItems="center">
       <Image
-        d={["none","flex" ]}
+        d={["none", "flex"]}
         src="splash-screen-banner.889f1fae.png"
         colStart="null|2"
         w="full"
@@ -15,16 +14,18 @@
         alignItems="center|flex-start"
         textAlign="center|left"
       >
-        <H1 m="0" fontSize="30px|50px" fontFamily="'Alegreya', serif" lineHeight="tight">
+        <H1 m="0" fontSize="30px|50px" fontFamily="heading" lineHeight="tight">
           Making Google Analytics easier for makers
         </H1>
-        <P  fontSize="20px" color="grey" mt="2" fontFamily= "serif">
-        An app that helps you to get actionable takeaways from your Google analytics in minutes
+        <P fontSize="20px" color="grey" mt="2" fontFamily="body">
+          An app that helps you to get actionable takeaways from your Google
+          analytics in minutes
         </P>
         <ButtonLink href="#" variant="primary">
           Sign in with Google
           <Icon name="arrow-right" ml="4" />
         </ButtonLink>
+        <Block src="button" />
       </Flexbox>
     </Grid>
   </Container>
@@ -33,27 +34,33 @@
 <Section>
   <Container>
 
-  <Div px="10px|250px">
+  <Div px="10px|40px|250px">
         
         <Image
         
-        border-radius="10px"
-        box-shadow= "0 4px 8px 0 rgba(0,0,0,0.3)" src="dashboard-demo.493e62eb.png" />
+      alignItems="center"
+      mx="auto"
+      boxShadow="3xl"
+      src="dashboard-demo.493e62eb.png"
+      maxWidth="600px"
+      mt="12|14|16"
+      rounded="3xl"
+      overflow="hidden"/>
         
       </Div>
   </Container>
 
 </Section>
 
-<Section  mt="-200px" bg ="muted" py="8|12|16|24">
+<Section mt="-200px" bg="muted" py="8|12|16|24">
   <Container>
-    
-      
-      <Div mt="200px|150px"textAlign="center">
-        <H2  fontFamily= "'Alegreya',serif">Simplify your analytics today</H2>
-        <P color="grey">Helps your focus on simplified metrics removing all the confusion from your GA reports</P>
-      </Div>
-    
+    <Div mt="200px|150px" textAlign="center">
+      <H2 fontFamily="'Alegreya',serif">Simplify your analytics today</H2>
+      <P color="grey">
+        Helps your focus on simplified metrics removing all the confusion from
+        your GA reports
+      </P>
+    </Div>
   </Container>
 </Section>
 
@@ -61,7 +68,6 @@
   <Container>
     <Grid col="1|2" gap="8|12|16" alignItems="center">
       <Image
-        
         src="time.026ff7d7.png"
         colStart="null|2"
         w="full"
@@ -73,29 +79,37 @@
         alignItems="center|flex-start"
         textAlign="center|left"
       >
-        <H1 m="0" fontSize="30px|50px" fontFamily= "'Alegreya',serif" lineHeight="tight">
-        Get reports delivered to you weekly
+        <H1
+          m="0"
+          fontSize="30px|50px"
+          fontFamily="'Alegreya',serif"
+          lineHeight="tight"
+        >
+          Get reports delivered to you weekly
         </H1>
         <P fontSize="20px" color="grey" mt="2">
-        Weekly reports delivered Monday every week keeping you up to date with all your projects' analytics
+          Weekly reports delivered Monday every week keeping you up to date with
+          all your projects' analytics
         </P>
-        
       </Flexbox>
     </Grid>
   </Container>
 </Section>
 
-<Section bg ="muted" py="8|12|16|24">
+<Section bg="muted" py="8|12|16|24">
   <Container>
     <Grid col="1|2" gap="8|12|16">
       <Div>
-        
         <Image src="business.db613987.png" />
-        
       </Div>
       <Div textAlign="center">
-        <H2 fontFamily= "Alegreya,serif">Customize metrics as per your preference</H2>
-        <P color="grey">Every project is different and required different metrics to evaluate growth. You are free to edit which metrics you want to prioritize</P>
+        <H2 fontFamily="Alegreya,serif">
+          Customize metrics as per your preference
+        </H2>
+        <P color="grey">
+          Every project is different and required different metrics to evaluate
+          growth. You are free to edit which metrics you want to prioritize
+        </P>
       </Div>
     </Grid>
   </Container>
@@ -105,7 +119,6 @@
   <Container>
     <Grid col="1|2" gap="8|12|16" alignItems="center">
       <Image
-        
         src="ease.0edf3f1f.png"
         colStart="null|2"
         w="full"
@@ -117,28 +130,34 @@
         alignItems="center|flex-start"
         textAlign="center|left"
       >
-        <H1 m="0" fontSize="30px|50px" fontFamily= "'Alegreya',serif" lineHeight="tight">
-        Manage analytics accounts with ease
+        <H1
+          m="0"
+          fontSize="30px|50px"
+          fontFamily="'Alegreya',serif"
+          lineHeight="tight"
+        >
+          Manage analytics accounts with ease
         </H1>
         <P fontSize="20px" color="grey" mt="2">
-        We provide a simple and intuitive dashboard showing data from your multiple google analytics on a single screen.
+          We provide a simple and intuitive dashboard showing data from your
+          multiple google analytics on a single screen.
         </P>
-        
       </Flexbox>
     </Grid>
   </Container>
 </Section>
 
-<Section py="8|12|16|24" bg="muted">
+<Section py="8|12|16|24">
   <Container>
-    <Div textAlign="center">
-      <H2 px="2|200" py="5" fontFamily= "'Alegreya',serif"fontSize="4xl|5xl" m="0">
-      Improve how you feel about your analytics today
-      </H2>
-      
-      <ButtonLink href="#" variant="primary lg" mt="6|0">
-         Sign in with Google <Icon name="arrow-right" ml="4" />
+    <Flexbox flexDirection="column" textAlign="center">
+      <H1 m="0" fontSize="50px" px="10px|30px|230px">
+        Improve how you feel about your analytics today
+      </H1>
+      <P fontSize="xl|2xl" mt="2"></P>
+      <ButtonLink href="#" variant="primary">
+        Sign in with Google
+        <Icon name="arrow-right" ml="4" />
       </ButtonLink>
-    </Div>
+    </Flexbox>
   </Container>
 </Section>
