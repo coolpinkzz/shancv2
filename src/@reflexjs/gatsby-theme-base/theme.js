@@ -1,4 +1,6 @@
 import base from "@reflexjs/preset-base";
+import "typeface-open-sans";
+import "typeface-noto-sans-sc";
 
 export default {
   preset: base,
@@ -7,7 +9,7 @@ export default {
     primary: `#09f`,
   },
   fonts: {
-    body: "'Sofia Pro'",
+    body: "noto sans sc",
     heading: "'Alegreya', serif",
     monospace: "Menlo, monospace",
   },

@@ -14,6 +14,7 @@ module.exports = {
         fonts: [
           `Alegreya`,
           `serif`, // you can also specify font weights and styles
+          `noto sans sc`,
         ],
         display: "swap",
       },
