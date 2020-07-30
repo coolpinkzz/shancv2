@@ -7,6 +7,7 @@
     >
       <Container>
         <Flexbox d={["none", "flex"]} justifyContent="space-between" py="1">
+
         <Image width="20%" src="logo-with-name.png" fontSize="3xl" fontWeight="semibold" color="text" />
           <NavMenu
             name={navName}
@@ -72,19 +73,24 @@
         </Div>
       </Flexbox>
     </Header>
-  
+
 export const Branding = () => {
-  
   return (
     <Container>
-    <Image mt="5" width="15%"src="logo-with-name.png" fontSize="3xl" fontWeight="semibold" color="text" />
-    </Container> 
-    
-  )
-}
+      <Image
+        mt="5"
+        width="15%"
+        src="logo-with-name.png"
+        fontSize="3xl"
+        fontWeight="semibold"
+        color="text"
+      />
+    </Container>
+  );
+};
 
 export const ModeToggle = ({ ...props }) => {
-  const [colorMode, setColorMode] = useColorMode()
+  const [colorMode, setColorMode] = useColorMode();
   return (
     <Button
       variant="icon"
@@ -97,6 +103,5 @@ export const ModeToggle = ({ ...props }) => {
       <Icon name={colorMode === "default" ? "sun" : "moon"} size="5" />
       <VisuallyHidden>Toggle mode</VisuallyHidden>
     </Button>
-  )
-}
-
+  );
+};
