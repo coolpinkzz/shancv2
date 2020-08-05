@@ -5,6 +5,7 @@ import "typeface-noto-sans-sc";
 export default {
   preset: base,
   // Overrides.
+
   colors: {
     primary: `#09f`,
   },
@@ -13,15 +14,10 @@ export default {
     heading: "'Alegreya', serif",
     monospace: "Menlo, monospace",
   },
-
   HW_badge_cont: {
-    position: "absolute",
+    position: "absolute !important",
   },
   HW_badge: {
-    background: "#5ab987",
-  },
-  HW_config: {
-    selector: "H1", // CSS selector where to inject the badge
-    account: "JlR9Gx",
+    background: "#5ab987 !important",
   },
 };
