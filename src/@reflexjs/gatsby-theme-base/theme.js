@@ -14,4 +14,10 @@ export default {
     heading: "'Alegreya', serif",
     monospace: "Menlo, monospace",
   },
+  HW_badge_cont: {
+    position: "absolute !important",
+  },
+  HW_badge: {
+    background: "#5ab987 !important",
+  },
 };

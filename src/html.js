@@ -2,22 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function HTML(props) {
-  
-  var HW_config = {
-    selector= "#footer",
-    account= "JlR9Gx",
-    translations= {
-      title= "The Changelog",
-      readMore= "Read more",
-      labels= {
-        new: "News",
-        improvement= "Updates",
-        fix= "Fixes",
-      },
-      footer= "Read more 👉",
-    },
-  };
-    return (
+  return (
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
@@ -27,7 +12,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script src="//cdn.headwayapp.co/widget.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
