@@ -1,9 +1,3 @@
-import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core";
-
-export const HeaderBlock = ({ ...props }) => {
-  const [showMenu, setShowMenu] = React.useState(false);
-  const navName = "header";
-  return (
     <Header
       position={["sticky", "relative"]}
       top="0"
@@ -13,15 +7,15 @@ export const HeaderBlock = ({ ...props }) => {
     >
       <Container>
         <Flexbox d={["none", "flex"]} justifyContent="space-between" py="1">
-          <Branding />
+
+        <Image width="20%" src="logo-with-name.png" fontSize="3xl" fontWeight="semibold" color="text" />
           <NavMenu
             name={navName}
             gap={[0, 8, 14]}
             ml={["auto", "auto"]}
             mr="null|10"
           />
-          <p>Updates</p>
-          <span id="footer"></span>
+          <ModeToggle ml="0" />
         </Flexbox>
       </Container>
       <Flexbox
@@ -79,19 +73,19 @@ export const HeaderBlock = ({ ...props }) => {
         </Div>
       </Flexbox>
     </Header>
-  );
-};
 
 export const Branding = () => {
   return (
-    <Image
-      mt="5"
-      width="15%"
-      src="logo-with-name.png"
-      fontSize="3xl"
-      fontWeight="semibold"
-      color="text"
-    />
+    <Container>
+      <Image
+        mt="5"
+        width="15%"
+        src="logo-with-name.png"
+        fontSize="3xl"
+        fontWeight="semibold"
+        color="text"
+      />
+    </Container>
   );
 };
 
@@ -111,5 +105,3 @@ export const ModeToggle = ({ ...props }) => {
     </Button>
   );
 };
-
-;
