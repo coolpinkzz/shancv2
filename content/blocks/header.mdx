@@ -2,7 +2,7 @@ import { useSiteMetadata, useColorMode } from "@reflexjs/gatsby-theme-core";
 
 export const HeaderBlock = ({ ...props }) => {
   const [showMenu, setShowMenu] = React.useState(false);
-  const navName = "header";
+  const navName = "Updates";
   return (
     <Header
       position={["sticky", "relative"]}
@@ -14,14 +14,11 @@ export const HeaderBlock = ({ ...props }) => {
       <Container>
         <Flexbox justifyContent="space-between" py="1">
           <Branding />
-          <NavMenu
-            name={navName}
-            gap={[0, 8, 14]}
-            ml={["auto", "auto"]}
-            mr="null|10"
-          />
-          <p>Updates</p>
-          <span id="footer"></span>
+          <NavMenu name={navName} ml={["auto", "auto"]} mr="null|10" />
+          <Flexbox mt="0">
+            <p>Updates</p>
+            <span id="footer"></span>
+          </Flexbox>
         </Flexbox>
       </Container>
       <Flexbox
@@ -83,7 +80,7 @@ export const HeaderBlock = ({ ...props }) => {
 export const Branding = () => {
   return (
     <Image
-      mt="5"
+      mt="0"
       width="30%|15%"
       src="logo-with-name.png"
       fontSize="3xl"
