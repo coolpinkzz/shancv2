@@ -14,7 +14,7 @@
   "dependencies": {
     "@reflexjs/gatsby-theme-base": "^0.2.3",
     "@reflexjs/preset-base": "^0.2.4",
-    "gatsby": "^2.22.11",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
